@@ -1,1 +1,1 @@
-web: origin="https://blindtest-front.herokuapp.com" node server/index.js
+web: serve -s build

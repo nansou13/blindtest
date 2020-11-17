@@ -1,7 +1,7 @@
 import io from 'socket.io-client';
-
-export const socket = io('http://10.40.44.243:4000');
-// export const socket = io('http://localhost:4000');
+const socketserver = process.env.REACT_APP_SOCKETSERVER || "http://localhost:4000";
+export const socket = io(socketserver);
+// export const socket = io('http://localhost:4000');'http://10.40.44.243:4000'
 const currentUsersArray = []
 export function sendMessage(id, value) {
   socket.emit(id, value)

@@ -5,7 +5,8 @@ var io = require('socket.io')(http, {
     cors: {
     //   origin: "http://localhost:3000", "http://10.40.44.243:3000"
       origin: origin,
-      methods: ["GET", "POST"]
+      methods: ["GET", "POST"],
+      credentials: true,
     }
   });
 

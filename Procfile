@@ -1,1 +1,1 @@
-web: origin="http://10.40.44.243:3000" node server/index.js
+web: origin="https://blindtest-front.herokuapp.com" node server/index.js
